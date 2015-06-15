@@ -2,6 +2,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*.pyc
 *$py.class
 
 # C extensions
@@ -52,9 +53,13 @@ coverage.xml
 # Django stuff:
 *.log
 Scripts/
+myvenv
+db.sqlite3
+.DS_Store
 
 # Sphinx documentation
 docs/_build/
 
 # PyBuilder
 target/
+*.sqlite3
