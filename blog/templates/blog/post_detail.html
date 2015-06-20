@@ -3,6 +3,7 @@
 {% block content %}
     <div class="card blue-grey darken-1">
 			<div class="card-content white-text">
+			<a href="{% url "post_edit" post_id=post.pk %}" class="top-menu"><span class="large mdi-image-edit"></span></a>
 		      	<span class="card-title"><a href="{% url "blog.views.post_detail" post_id=post.pk %}">{{ post.title }}</a></span>
 		        {% if post.published_date %}
 		            <p>{{ post.published_date }}</p>
