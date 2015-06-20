@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <div class="card blue-grey darken-1">
+			<div class="card-content white-text">
+		      	<span class="card-title"><a href="{% url "blog.views.post_detail" post_id=post.pk %}">{{ post.title }}</a></span>
+		        {% if post.published_date %}
+		            <p>{{ post.published_date }}</p>
+		        {% endif %}
+			    <p>{{ post.text|linebreaks }}</p>
+			</div>
+		</div>
+{% endblock %}
