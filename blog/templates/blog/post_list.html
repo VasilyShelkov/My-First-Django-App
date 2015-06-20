@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,14 +7,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Vasia's Blog</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+	<link rel="stylesheet" href="{% static "css/blog.css" %}">
 </head>
 <body>
-	
-	<div class="container">
-		<div>
-			<h1>Vasia's First Blog and Template !</h1>
+	<div class="blue-grey darken-1">
+		<div class="container">
+			<h1 class="white-text">Vasia's First Blog and Template !</h1>
 		</div>
+	</div>
 
+	<div class="container">
 		{% for post in posts %}
 			<div class="card blue-grey darken-1">
 				<div class="card-content white-text">
